@@ -1,0 +1,14 @@
+sudo: false  # means that the build doesn't need super user privelages
+cache: pip  # means that packages can be cached from pip
+
+language: python
+
+python:
+
+    - "3.6"
+
+install:
+    - pip install tox
+
+script:
+  - tox
